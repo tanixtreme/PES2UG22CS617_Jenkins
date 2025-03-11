@@ -5,17 +5,17 @@ pipeline {
         stage('Build') {
             steps {
                 
-                build 'PES2UG22CS617
+                build 'PES2UG22C'
                 
                 
-                sh 'g++ -o output main.cpp'
+                sh 'g++ -o output min.cpp'
             }
         }
         
         stage('Test') {
             steps {
                 
-                sh './outp
+                sh './output'
             }
         }
         
